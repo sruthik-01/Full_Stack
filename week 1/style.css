@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #f5efff,
+        #fff7fb,
+        #eef6ff
+    );
+
+    color: #333;
+}
+
+
+/* =========================
+   FIRST PAGE
+   ========================= */
+
+.home-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.home-container h1 {
+
+    font-size: 38px;
+
+    color: #6844a5;
+
+    margin-bottom: 25px;
+}
+
+.intro {
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.home-container h2 {
+
+    font-size: 32px;
+
+    color: #9b59b6;
+
+    margin-bottom: 25px;
+}
+
+
+/* Profile photo */
+
+.profile-photo {
+
+    width: 230px;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 7px solid white;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.18);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Photo animation */
+
+.profile-photo:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.click-text {
+
+    margin-top: 20px;
+
+    color: #777;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   SECOND PAGE
+   ========================= */
+
+.details-container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+.back-button {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #8e6bbd;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+}
+
+.details-container > h1 {
+
+    text-align: center;
+
+    color: #6844a5;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+.about-text {
+
+    text-align: center;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px auto;
+
+    color: #555;
+
+}
+
+
+/* Cards */
+
+.card {
+
+    background: rgba(255, 255, 255, 0.85);
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+
+    color: #8054a8;
+
+    margin-bottom: 18px;
+
+}
+
+.card p {
+
+    margin: 12px 0;
+
+    line-height: 1.5;
+}
+
+
+/* Education */
+
+.education {
+
+    padding-left: 10px;
+}
+
+.education h3 {
+
+    color: #444;
+
+    margin-bottom: 8px;
+}
+
+
+/* Certificates */
+
+.card ul {
+
+    padding-left: 25px;
+}
+
+.card li {
+
+    margin: 12px 0;
+}
+
+
+/* Projects */
+
+.project {
+
+    background: #faf7ff;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    margin-bottom: 15px;
+}
+
+.project h3 {
+
+    color: #6844a5;
+
+    margin-bottom: 8px;
+}
+
+
+/* Skills */
+
+.skills {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.skills span {
+
+    background: #eee3ff;
+
+    color: #6844a5;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* Links */
+
+.card a {
+
+    color: #6844a5;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.card a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: #777;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .home-container h1 {
+
+        font-size: 28px;
+    }
+
+    .home-container h2 {
+
+        font-size: 26px;
+    }
+
+    .profile-photo {
+
+        width: 190px;
+
+        height: 190px;
+    }
+
+    .details-container > h1 {
+
+        font-size: 30px;
+    }
+
+    .card {
+
+        padding: 20px;
+    }
+}
