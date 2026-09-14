@@ -1,0 +1,1059 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===================================
+   BODY
+=================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    background:
+        radial-gradient(
+            circle at 10% 5%,
+            #471080 0%,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 40%,
+            #111f62 0%,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 20% 90%,
+            #5a125f 0%,
+            transparent 25%
+        ),
+
+        #030817;
+
+    color: white;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+
+    overflow-y: auto;
+}
+
+
+/* ===================================
+   POSTER
+=================================== */
+
+.poster {
+
+    width: 100%;
+
+    max-width: 950px;
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    padding:
+        70px 60px
+        50px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(4, 8, 30, 0.98),
+            rgba(9, 4, 32, 0.98)
+        );
+
+    overflow: visible;
+
+    box-shadow:
+        0 0 100px
+        rgba(100, 40, 255, 0.25);
+}
+
+
+/* Decorative corner lights */
+
+.poster::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: #8d42ff;
+
+    filter: blur(100px);
+
+    opacity: 0.18;
+
+    top: -100px;
+
+    left: -100px;
+
+    pointer-events: none;
+}
+
+
+.poster::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: #ff3dc8;
+
+    filter: blur(100px);
+
+    opacity: 0.15;
+
+    bottom: 0;
+
+    right: -100px;
+
+    pointer-events: none;
+}
+
+
+/* ===================================
+   HEADER
+=================================== */
+
+header {
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.department {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    letter-spacing: 9px;
+
+    margin-bottom: 12px;
+}
+
+
+.presents {
+
+    font-size: 13px;
+
+    letter-spacing: 6px;
+
+    color: #c68cff;
+
+    margin-bottom: 35px;
+}
+
+
+h1 {
+
+    font-size:
+        clamp(65px, 11vw, 120px);
+
+    line-height: 0.82;
+
+    font-weight: 1000;
+
+    letter-spacing: -7px;
+
+    text-transform: uppercase;
+}
+
+
+h1 span {
+
+    display: block;
+
+    margin-top: 18px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff54c9,
+            #a36aff,
+            #43dfff,
+            #ffd65c
+        );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+.tagline {
+
+    margin-top: 35px;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+}
+
+
+.tagline b {
+
+    color: #ff63d2;
+
+    margin: 0 10px;
+}
+
+
+.intro {
+
+    max-width: 650px;
+
+    margin:
+        25px auto
+        55px;
+
+    color: #d8d5e6;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* ===================================
+   EVENT DETAILS
+=================================== */
+
+.event-details {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.event-box {
+
+    min-height: 200px;
+
+    padding: 25px 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,0.035);
+
+    transition:
+        transform 0.3s ease;
+
+    border: 1px solid;
+}
+
+
+.event-box:hover {
+
+    transform:
+        translateY(-8px);
+}
+
+
+.date {
+
+    border-color: #a65cff;
+
+    box-shadow:
+        0 0 25px
+        rgba(166,92,255,0.12);
+}
+
+
+.time {
+
+    border-color: #ffd557;
+
+    box-shadow:
+        0 0 25px
+        rgba(255,213,87,0.12);
+}
+
+
+.venue {
+
+    border-color: #ff58c8;
+
+    box-shadow:
+        0 0 25px
+        rgba(255,88,200,0.12);
+}
+
+
+.team {
+
+    border-color: #3cddff;
+
+    box-shadow:
+        0 0 25px
+        rgba(60,221,255,0.12);
+}
+
+
+.icon {
+
+    font-size: 38px;
+
+    margin-bottom: 18px;
+}
+
+
+.label {
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    color: #bd9cff;
+
+    margin-bottom: 12px;
+}
+
+
+.value {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    font-weight: bold;
+}
+
+
+/* ===================================
+   THEME
+=================================== */
+
+.theme-section {
+
+    text-align: center;
+
+    margin-top: 45px;
+
+    padding: 35px 20px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(125,55,255,0.17),
+            rgba(255,65,194,0.12)
+        );
+
+    border:
+        1px solid
+        rgba(180,100,255,0.5);
+}
+
+
+.section-small {
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #b995ff;
+
+    margin-bottom: 12px;
+}
+
+
+.theme-section h2 {
+
+    font-size:
+        clamp(22px, 4vw, 34px);
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff62cc,
+            #a773ff,
+            #45ddff
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    margin-bottom: 12px;
+}
+
+
+.theme-section p {
+
+    color: #c9c5d5;
+
+    font-size: 14px;
+}
+
+
+/* ===================================
+   PARTICIPATION
+=================================== */
+
+.participation {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+
+    margin-top: 22px;
+}
+
+
+.participation-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border:
+        1px solid
+        #874dff;
+
+    background:
+        rgba(130,60,255,0.08);
+}
+
+
+.participation-box:nth-child(2) {
+
+    border-color: #2bdcff;
+
+    background:
+        rgba(30,210,255,0.06);
+}
+
+
+.big-icon {
+
+    font-size: 38px;
+}
+
+
+.participation-box h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 7px;
+}
+
+
+.participation-box p {
+
+    font-size: 13px;
+
+    color: #bcb7ca;
+}
+
+
+/* ===================================
+   DEADLINE
+=================================== */
+
+.deadline {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 25px;
+
+    padding: 22px;
+
+    border-radius: 20px;
+
+    border:
+        1px solid
+        #20d8ff;
+
+    background:
+        rgba(0,200,255,0.07);
+
+    text-align: center;
+}
+
+
+.deadline-icon {
+
+    font-size: 38px;
+}
+
+
+.deadline p {
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #3edfff;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.deadline h2 {
+
+    font-size: 25px;
+}
+
+
+/* ===================================
+   MESSAGE
+=================================== */
+
+.message {
+
+    min-height: 240px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 35px;
+
+    text-align: center;
+}
+
+
+.side-message {
+
+    font-size: 19px;
+
+    line-height: 1.5;
+
+    font-weight: bold;
+
+    font-style: italic;
+}
+
+
+.left {
+
+    color: #c16cff;
+
+    transform: rotate(-8deg);
+}
+
+
+.right {
+
+    color: #42ddff;
+
+    transform: rotate(8deg);
+}
+
+
+.main-message {
+
+    flex: 1;
+}
+
+
+.main-message p {
+
+    font-size: 16px;
+
+    letter-spacing: 6px;
+
+    color: #aaa0bd;
+}
+
+
+.main-message h2 {
+
+    font-size:
+        clamp(35px, 6vw, 58px);
+
+    margin: 10px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff59c9,
+            #a269ff,
+            #4bdfff
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ===================================
+   REGISTER
+=================================== */
+
+.register {
+
+    text-align: center;
+
+    margin: 5px 0 45px;
+}
+
+
+button {
+
+    border: none;
+
+    cursor: pointer;
+
+    padding:
+        19px 50px;
+
+    border-radius: 50px;
+
+    font-size: 17px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    color: #12001e;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff5acb,
+            #a56aff,
+            #4ddfff
+        );
+
+    box-shadow:
+        0 0 30px
+        rgba(190,70,255,0.55);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+button:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 50px
+        rgba(200,70,255,0.85);
+}
+
+
+button span {
+
+    font-size: 24px;
+
+    margin-left: 10px;
+}
+
+
+/* ===================================
+   CONTACT
+=================================== */
+
+.contact {
+
+    text-align: center;
+
+    padding: 28px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.15);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,0.15);
+}
+
+
+.contact h2 {
+
+    font-size: 19px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.contact p:last-child {
+
+    color: #49ddff;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ===================================
+   ORGANIZER
+=================================== */
+
+.organizer {
+
+    text-align: center;
+
+    padding-top: 35px;
+}
+
+
+.line {
+
+    width: 220px;
+
+    height: 2px;
+
+    margin:
+        0 auto
+        20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #a45cff,
+            transparent
+        );
+}
+
+
+.organizer p {
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #a9a2b8;
+}
+
+
+.organizer h2 {
+
+    margin-top: 10px;
+
+    font-size: 23px;
+
+    letter-spacing: 5px;
+}
+
+
+.organizer .college {
+
+    margin-top: 12px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ===================================
+   BOTTOM
+=================================== */
+
+.bottom {
+
+    text-align: center;
+
+    padding-top: 45px;
+}
+
+
+.code-symbol {
+
+    font-size: 45px;
+
+    color: #48ddff;
+
+    text-shadow:
+        0 0 20px
+        rgba(50,220,255,0.7);
+
+    margin-bottom: 15px;
+}
+
+
+.bottom h2 {
+
+    font-size: 24px;
+
+    letter-spacing: 5px;
+}
+
+
+.bottom p {
+
+    margin-top: 8px;
+
+    letter-spacing: 8px;
+
+    color: #b66cff;
+}
+
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media (max-width: 700px) {
+
+    .poster {
+
+        padding:
+            45px 20px
+            35px;
+    }
+
+
+    .department {
+
+        font-size: 13px;
+
+        letter-spacing: 5px;
+    }
+
+
+    .presents {
+
+        font-size: 10px;
+
+        letter-spacing: 4px;
+    }
+
+
+    h1 {
+
+        font-size: 58px;
+
+        letter-spacing: -4px;
+    }
+
+
+    .tagline {
+
+        font-size: 13px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .tagline b {
+
+        margin: 0 4px;
+    }
+
+
+    .intro {
+
+        font-size: 13px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .event-details {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 12px;
+    }
+
+
+    .event-box {
+
+        min-height: 170px;
+
+        padding: 15px 8px;
+    }
+
+
+    .icon {
+
+        font-size: 30px;
+    }
+
+
+    .value {
+
+        font-size: 13px;
+    }
+
+
+    .participation {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .participation-box {
+
+        padding: 20px;
+    }
+
+
+    .message {
+
+        min-height: 190px;
+    }
+
+
+    .side-message {
+
+        font-size: 13px;
+    }
+
+
+    .main-message p {
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .main-message h2 {
+
+        font-size: 30px;
+    }
+
+
+    button {
+
+        padding:
+            16px 30px;
+
+        font-size: 14px;
+    }
+
+
+    .organizer h2 {
+
+        font-size: 18px;
+
+        letter-spacing: 3px;
+    }
+
+}
+
+
+/* ===================================
+   VERY SMALL PHONES
+=================================== */
+
+@media (max-width: 400px) {
+
+    .event-details {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    h1 {
+
+        font-size: 52px;
+    }
+
+
+    .side-message {
+
+        display: none;
+    }
+
+
+    .main-message h2 {
+
+        font-size: 32px;
+    }
+
+}
+```
