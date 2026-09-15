@@ -1,0 +1,10 @@
+/*Used to change the font style of text.
+syntax: font-family: font-name, fallback-font;
+*/
+h1 {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-family: "Courier New", monospace;
+}

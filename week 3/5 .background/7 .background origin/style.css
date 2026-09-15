@@ -1,0 +1,32 @@
+/*| Value         | Description                                               |
+| ------------- | --------------------------------------------------------- |
+| `border-box`  | Background image starts from the **border**.              |
+| `padding-box` | Background image starts from the **padding**. *(Default)* |
+| `content-box` | Background image starts from the **content** area.        |
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    border: 10px solid blue;
+    padding: 30px;
+
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Background starts from the padding */
+    background-origin: padding-box;
+
+    color: rgb(22, 6, 1);
+    font-size: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+/* Changes the size of the background image */
+
+/*
+Values:
+cover       - Covers the entire element.
+contain     - Fits the whole image inside the element.
+100px 100px - Custom width and height.
+50% 50%     - Percentage width and height.
+*/
+/* Controls the size of the background image */
+
+/* Controls the size of the background image */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: 500px 300px;
+    background-position: center;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}

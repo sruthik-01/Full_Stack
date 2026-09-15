@@ -1,0 +1,9 @@
+/* Use background-color to change the background */
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    background-color: lightgreen;
+}

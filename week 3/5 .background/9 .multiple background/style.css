@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: lightgray;
+}
+
+.box {
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
+    border: 3px solid black;
+
+    /* Two background images */
+    background-image: url("background1.png"), url("background2.png");
+
+    /* Position of each image */
+    background-position: left top, right bottom;
+
+    /* Size of each image */
+    background-size: 200px 200px, 200px 200px;
+
+    /* Do not repeat */
+    background-repeat: no-repeat, no-repeat;
+
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(36, 3, 253);
+}

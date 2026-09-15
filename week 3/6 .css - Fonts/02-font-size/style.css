@@ -1,0 +1,25 @@
+
+/* The font-size property changes the size of the text. */
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*
+Common Units
+
+px   -> Pixels (Most Common)
+em   -> Relative to parent element
+rem  -> Relative to root element
+%    -> Percentage
+vw   -> Viewport width
+vh   -> Viewport height
+*/
+

@@ -1,0 +1,28 @@
+/* Controls whether the background scrolls */
+
+/*
+Values:
+scroll - Background scrolls with the page (default).
+fixed  - Background stays fixed while the page scrolls.
+local  - Background scrolls with the element.
+*/
+/* Controls how the background image moves when scrolling */
+
+body {
+    margin: 0;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
